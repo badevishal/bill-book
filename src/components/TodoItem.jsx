@@ -45,8 +45,8 @@ function TodoItem({ todo }) {
           className={`border outline-none w-full bg-transparent px-4 rounded-lg ${
             isTodoEditable ? "border-black/10 px-2" : "border-transparent"
           } ${todo.completed ? "line-through" : ""}`}
-          // value={todoPrice}
-          value={`${todo.completed ? todo.price=0 : todo.price=todoPrice}`}
+          value={todoPrice}
+          // value={`${todo.completed ? todo.price=0 : todo.price=todoPrice}`}
           onChange={(e) => setTodoPrice(e.target.value)}
           readOnly={!isTodoEditable}
         />
