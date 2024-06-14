@@ -5,7 +5,6 @@ import { TodoProvider } from "./contexts";
 
 function App() {
   // Dark Theme.
-  console.log("Start..");
   const [themeMode, setThemeMode] = useState("light");
 
   const lightMode = () => {
@@ -25,7 +24,7 @@ function App() {
   const [todos, setTodos] = useState([]);
 
   const addTodo = (todo) => {
-    setTodos((prev) => [{ id: Date.now(), ...todo}, ...prev]);
+    setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev]);
   };
 
   const updateTodo = (id, todo) => {
