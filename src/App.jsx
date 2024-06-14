@@ -5,6 +5,7 @@ import { TodoProvider } from "./contexts";
 
 function App() {
   // Dark Theme.
+  console.log("Start..");
   const [themeMode, setThemeMode] = useState("light");
 
   const lightMode = () => {
